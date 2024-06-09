@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
+    "C:\\Users\\farna\\Desktop\\temp\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+    "C:\\Users\\farna\\Desktop\\temp\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\farna\\Desktop\\temp\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
         "projectName": "LibraryManagementSystem",
-        "projectPath": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectPath": "C:\\Users\\farna\\Desktop\\temp\\HW2_1\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
         "packagesPath": "C:\\Users\\farna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\farna\\Desktop\\temp\\HW2_1\\LibraryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
