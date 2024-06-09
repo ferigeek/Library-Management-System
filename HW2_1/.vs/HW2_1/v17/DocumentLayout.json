@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\farna\\Desktop\\HW2_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\farna\\desktop\\hw2_1\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\farna\\Desktop\\HW2_1\\librarymanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\farna\\Desktop\\HW2_1\\librarymanagementsystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\farna\\Desktop\\HW2_1\\librarymanagementsystem\\booknotavailableexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\booknotavailableexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\farna\\Desktop\\HW2_1\\librarymanagementsystem\\booknotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96300E45-AB61-4F6F-9201-C5412BEF4BE8}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\booknotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\BookNotFoundException.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\BookNotFoundException.cs",
+              "ToolTip": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\BookNotFoundException.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\BookNotFoundException.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T13:55:55.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookNotAvailableException.cs",
+              "DocumentMoniker": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\BookNotAvailableException.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\BookNotAvailableException.cs",
+              "ToolTip": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\BookNotAvailableException.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\BookNotAvailableException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T13:53:51.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\User.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\User.cs",
+              "ToolTip": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\User.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\User.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T18:18:25.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Book.cs",
+              "ToolTip": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\Book.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Book.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T18:00:41.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\farna\\Desktop\\HW2_1\\LibraryManagementSystem\\Program.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Program.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAKgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T17:44:17.856Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
