@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\LMS.csproj": {}
+    "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\LMS.csproj": {}
   },
   "projects": {
-    "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\LMS.csproj": {
+    "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\LMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\LMS.csproj",
+        "projectUniqueName": "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\LMS.csproj",
         "projectName": "LMS",
-        "projectPath": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\LMS.csproj",
+        "projectPath": "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\LMS.csproj",
         "packagesPath": "C:\\Users\\farna\\.nuget\\packages\\",
-        "outputPath": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\obj\\",
+        "outputPath": "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "P:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
