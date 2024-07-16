@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>P:\SandBox\LibraryManagementSystem\LMS\LMS\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Forms\BookView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BookAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MemberAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MemberView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

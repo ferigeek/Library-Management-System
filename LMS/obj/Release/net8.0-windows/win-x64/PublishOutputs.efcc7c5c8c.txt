@@ -1,0 +1,2 @@
+P:\SandBox\LibraryManagementSystem\LMS\LMS\bin\Release\net8.0-windows\publish\win-x64\LMS.pdb
+P:\SandBox\LibraryManagementSystem\LMS\LMS\bin\Release\net8.0-windows\publish\win-x64\LMS.exe
