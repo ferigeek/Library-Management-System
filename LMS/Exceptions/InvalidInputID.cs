@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LMS.Exceptions
 {
-    public class InvalidInputID : InputException
+    internal class InvalidInputID : InputException
     {
         private string message {  get; set; }
         private string caption { get; set; }

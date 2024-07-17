@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LMS.Exceptions
 {
-    public class LendingException : InputException
+    internal class LendingException : InputException
     {
         private string message { get; set; }
         private string caption { get; set; }

@@ -8,7 +8,7 @@ using LMS.Exceptions;
 
 namespace LMS.Entities
 {
-    public class Member
+    internal class Member
     {
         public Member ( int id, string firstName,  string lastName, string membershipType, int score )
         {

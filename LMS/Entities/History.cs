@@ -8,7 +8,7 @@ using LMS.Exceptions;
 
 namespace LMS.Entities
 {
-    public class History
+    internal class History
     {
         public History ( int bookCode, int memberID, int year, int month, int day)
         {

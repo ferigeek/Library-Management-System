@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace LMS.Exceptions
 {
-    public class InputException : Exception
+    internal class InputException : Exception
     {
         private string message { get; set; }
         private string caption {  get; set; }

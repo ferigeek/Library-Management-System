@@ -2,6 +2,7 @@ using LMS.Forms;
 using LMS.Entities;
 using ClosedXML;
 using ClosedXML.Excel;
+using System.Windows.Forms;
 
 namespace LMS
 {
@@ -346,8 +347,8 @@ namespace LMS
         {
             string code = deadlineText.Text;
             string id = "";
+            string date = "";
 
-            MessageBox.Show(code + id);
 
             using (var workBook = new XLWorkbook(@"./LMS.xlsx"))
             {
@@ -360,6 +361,7 @@ namespace LMS
                         if (lendSheet.Cell(i, 1).GetValue<string>() == code)
                         {
                             id = lendSheet.Cell(i, 2).GetValue<string>();
+                            date = lendSheet.Cell(i, 3).GetValue<string>();
                             lendSheet.Row(i).Delete();
                             break;
                         }
@@ -383,6 +385,7 @@ namespace LMS
 
 
 
+                DateTime today = DateTime.Now.Date;
                 var memberSheet = workBook.Worksheet(1);
                 if (!memberSheet.IsEmpty())
                 {
@@ -405,7 +408,21 @@ namespace LMS
                                 }
                             }
 
+                            //Giving score accroding to how soon the book has been retrieved.
+
                             memberSheet.Cell(i, 6).Value = s;
+
+                            int year = Convert.ToInt32(date.Split('/')[0]);
+                            int month = Convert.ToInt32(date.Split('/')[1]);
+                            int day = Convert.ToInt32(date.Split('/')[2]);
+
+                            int score = memberSheet.Cell(i, 5).GetValue<int>();
+                            score += (year - today.Year) * 365;
+                            score += (month - today.Month) * 30;
+                            score += (day - today.Day);
+
+                            memberSheet.Cell(i, 5).Value = score;
+
                             break;
                         }
                     }
@@ -420,6 +437,63 @@ namespace LMS
 
             PrimaryLendRetrievePanel.Enabled = true;
             PrimaryLendRetrievePanel.Visible = true;
+        }
+
+        private void ExcelExport_Click(object sender, EventArgs e)
+        {
+            ExcelExportSave.Filter = "Excel Files (*.xlsx)|*.xlsx";
+            ExcelExportSave.Title = "Export app's excel file";
+            ExcelExportSave.FileName = "LibraryManagementSystem.xlsx";
+
+
+            if (ExcelExportSave.ShowDialog() == DialogResult.OK)
+            {
+                string destinationFilePath = ExcelExportSave.FileName;
+
+                try
+                {
+                    File.Copy(@"./LMS.xlsx", destinationFilePath, true);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
+
+        private void ImportBtn_Click(object sender, EventArgs e)
+        {
+            openFileDialog.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+            openFileDialog.Title = "Select an Excel File";
+            openFileDialog.FileName = "";
+
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                try
+                {
+                    using (var workBook = new XLWorkbook(filePath))
+                    {
+                        var workSheet = workBook.Worksheet(1);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var import = new Import(filePath);
+                import.ImportExcel();
+            }
+
+
+            ShowMemberList();
+            ShowBookList();
+            ShowHistoryList();
+            ShowRankList();
         }
     }
 }

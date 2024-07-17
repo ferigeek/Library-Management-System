@@ -7,24 +7,20 @@
       "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\import.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\import.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\exceptions\\importexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\exceptions\\importexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|P:\\SandBox\\LibraryManagementSystem\\LMS\\lms\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\entities\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\entities\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\exceptions\\lendingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\exceptions\\lendingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|p:\\sandbox\\librarymanagementsystem\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE5A7C1-4A92-4168-B9F1-406F5305F197}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,46 +42,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Book.cs",
-              "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Entities\\Book.cs",
-              "RelativeDocumentMoniker": "LMS\\Entities\\Book.cs",
-              "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Entities\\Book.cs",
-              "RelativeToolTip": "LMS\\Entities\\Book.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "ImportException.cs",
+              "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Exceptions\\ImportException.cs",
+              "RelativeDocumentMoniker": "LMS\\Exceptions\\ImportException.cs",
+              "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Exceptions\\ImportException.cs",
+              "RelativeToolTip": "LMS\\Exceptions\\ImportException.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:09:06.351Z",
+              "WhenOpened": "2024-07-17T13:57:31.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LendingException.cs",
-              "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Exceptions\\LendingException.cs",
-              "RelativeDocumentMoniker": "LMS\\Exceptions\\LendingException.cs",
-              "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Exceptions\\LendingException.cs",
-              "RelativeToolTip": "LMS\\Exceptions\\LendingException.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBAAAAAsAAAA",
+              "DocumentIndex": 1,
+              "Title": "Import.cs",
+              "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Import.cs",
+              "RelativeDocumentMoniker": "LMS\\Import.cs",
+              "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Import.cs",
+              "RelativeToolTip": "LMS\\Import.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAHcAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:02:12.693Z",
+              "WhenOpened": "2024-07-17T13:36:41.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "History.cs",
-              "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Entities\\History.cs",
-              "RelativeDocumentMoniker": "LMS\\Entities\\History.cs",
-              "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Entities\\History.cs",
-              "RelativeToolTip": "LMS\\Entities\\History.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAuwBsAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T05:56:32.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.cs [Design]",
               "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\MainWindow.cs",
               "RelativeDocumentMoniker": "LMS\\MainWindow.cs",
@@ -97,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Program.cs",
               "RelativeDocumentMoniker": "LMS\\Program.cs",
               "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\Program.cs",
               "RelativeToolTip": "LMS\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvxsAAAAMAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T16:16:57.509Z",
               "EditorCaption": ""
@@ -116,7 +99,7 @@
               "RelativeDocumentMoniker": "LMS\\MainWindow.cs",
               "ToolTip": "P:\\SandBox\\LibraryManagementSystem\\LMS\\LMS\\MainWindow.cs",
               "RelativeToolTip": "LMS\\MainWindow.cs",
-              "ViewState": "AQIAAIUBAAAAAAAAAAAswGkBAABJAAAA",
+              "ViewState": "AQIAAMoBAAAAAAAAAAAmwNQBAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-13T06:56:39.585Z",
               "EditorCaption": ""

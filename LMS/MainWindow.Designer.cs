@@ -69,6 +69,10 @@
             LendingLabel = new Label();
             CloseBtn = new Button();
             selectionTip = new ToolTip(components);
+            ExcelExportSave = new SaveFileDialog();
+            ExcelExport = new Button();
+            openFileDialog = new OpenFileDialog();
+            ImportBtn = new Button();
             MemberPanel.SuspendLayout();
             BookPanel.SuspendLayout();
             ScorePanel.SuspendLayout();
@@ -469,12 +473,40 @@
             selectionTip.InitialDelay = 50;
             selectionTip.ReshowDelay = 50;
             // 
+            // ExcelExport
+            // 
+            ExcelExport.BackColor = SystemColors.ActiveCaption;
+            ExcelExport.Location = new Point(12, 517);
+            ExcelExport.Name = "ExcelExport";
+            ExcelExport.Size = new Size(139, 23);
+            ExcelExport.TabIndex = 5;
+            ExcelExport.Text = "Export Excel file";
+            ExcelExport.UseVisualStyleBackColor = false;
+            ExcelExport.Click += ExcelExport_Click;
+            // 
+            // openFileDialog
+            // 
+            openFileDialog.FileName = "openFileDialog";
+            // 
+            // ImportBtn
+            // 
+            ImportBtn.BackColor = SystemColors.ActiveCaption;
+            ImportBtn.Location = new Point(157, 517);
+            ImportBtn.Name = "ImportBtn";
+            ImportBtn.Size = new Size(123, 23);
+            ImportBtn.TabIndex = 6;
+            ImportBtn.Text = "Import Excel file";
+            ImportBtn.UseVisualStyleBackColor = false;
+            ImportBtn.Click += ImportBtn_Click;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(855, 552);
+            Controls.Add(ImportBtn);
+            Controls.Add(ExcelExport);
             Controls.Add(CloseBtn);
             Controls.Add(LendingPanel);
             Controls.Add(HistoryPanel);
@@ -544,5 +576,9 @@
         private Button RetrieveButton;
         private Button Cancel2Btn;
         private TextBox deadlineText;
+        private SaveFileDialog ExcelExportSave;
+        private Button ExcelExport;
+        private OpenFileDialog openFileDialog;
+        private Button ImportBtn;
     }
 }
