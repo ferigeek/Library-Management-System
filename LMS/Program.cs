@@ -19,6 +19,7 @@ namespace LMS
                 {
                     var Members = workbook.Worksheets.Add("Members");
                     var Books = workbook.Worksheets.Add("Books");
+                    var Lendings = workbook.Worksheets.Add("Lendings");
                     workbook.SaveAs(@"./LMS.xlsx");
                 }
             }
