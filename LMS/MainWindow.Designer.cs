@@ -31,12 +31,14 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             MemberPanel = new Panel();
+            memberSearch = new TextBox();
             memberList = new ListBox();
             ViewMemberBtn = new Button();
             MemberLabel = new Label();
             AddMemberBtn = new Button();
             DeleteMemberBtn = new Button();
             BookPanel = new Panel();
+            bookSearch = new TextBox();
             AddBookBtn = new Button();
             ViewBookBtn = new Button();
             bookList = new ListBox();
@@ -86,6 +88,7 @@
             // MemberPanel
             // 
             MemberPanel.BorderStyle = BorderStyle.FixedSingle;
+            MemberPanel.Controls.Add(memberSearch);
             MemberPanel.Controls.Add(memberList);
             MemberPanel.Controls.Add(ViewMemberBtn);
             MemberPanel.Controls.Add(MemberLabel);
@@ -96,13 +99,23 @@
             MemberPanel.Size = new Size(403, 245);
             MemberPanel.TabIndex = 0;
             // 
+            // memberSearch
+            // 
+            memberSearch.Location = new Point(3, 18);
+            memberSearch.Name = "memberSearch";
+            memberSearch.Size = new Size(395, 23);
+            memberSearch.TabIndex = 6;
+            memberSearch.Text = "Search ...";
+            memberSearch.TextChanged += memberSearch_TextChanged;
+            memberSearch.Leave += memberSearch_Leave;
+            // 
             // memberList
             // 
             memberList.FormattingEnabled = true;
             memberList.ItemHeight = 15;
-            memberList.Location = new Point(3, 18);
+            memberList.Location = new Point(3, 48);
             memberList.Name = "memberList";
-            memberList.Size = new Size(395, 184);
+            memberList.Size = new Size(395, 154);
             memberList.TabIndex = 5;
             memberList.SelectedIndexChanged += memberList_SelectedIndexChanged;
             memberList.DoubleClick += ViewMemberBtn_Click;
@@ -149,6 +162,7 @@
             // BookPanel
             // 
             BookPanel.BorderStyle = BorderStyle.FixedSingle;
+            BookPanel.Controls.Add(bookSearch);
             BookPanel.Controls.Add(AddBookBtn);
             BookPanel.Controls.Add(ViewBookBtn);
             BookPanel.Controls.Add(bookList);
@@ -158,6 +172,16 @@
             BookPanel.Name = "BookPanel";
             BookPanel.Size = new Size(418, 245);
             BookPanel.TabIndex = 1;
+            // 
+            // bookSearch
+            // 
+            bookSearch.Location = new Point(3, 18);
+            bookSearch.Name = "bookSearch";
+            bookSearch.Size = new Size(410, 23);
+            bookSearch.TabIndex = 5;
+            bookSearch.Text = "Search ...";
+            bookSearch.TextChanged += bookSearch_TextChanged;
+            bookSearch.Leave += bookSearch_Leave;
             // 
             // AddBookBtn
             // 
@@ -183,9 +207,9 @@
             // 
             bookList.FormattingEnabled = true;
             bookList.ItemHeight = 15;
-            bookList.Location = new Point(3, 18);
+            bookList.Location = new Point(3, 48);
             bookList.Name = "bookList";
-            bookList.Size = new Size(410, 184);
+            bookList.Size = new Size(410, 154);
             bookList.TabIndex = 1;
             bookList.SelectedIndexChanged += bookList_SelectedIndexChanged;
             bookList.DoubleClick += ViewBookBtn_Click;
@@ -580,5 +604,7 @@
         private Button ExcelExport;
         private OpenFileDialog openFileDialog;
         private Button ImportBtn;
+        private TextBox memberSearch;
+        private TextBox bookSearch;
     }
 }

@@ -3,6 +3,7 @@ using LMS.Entities;
 using ClosedXML;
 using ClosedXML.Excel;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace LMS
 {
@@ -494,6 +495,86 @@ namespace LMS
             ShowBookList();
             ShowHistoryList();
             ShowRankList();
+        }
+
+        private void memberSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = memberSearch.Text;
+
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                ShowMemberList();
+                return;
+            }
+
+            try
+            {
+                string pattern = Regex.Escape(searchText);
+                Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
+
+
+                var valid =
+                    from item in Member.ViewList()
+                    where regex.IsMatch(Convert.ToString(item.ID)) || regex.IsMatch(item.FirstName) || regex.IsMatch(item.LastName)
+                    select item;
+
+                memberList.Items.Clear();
+                foreach (var item in valid)
+                {
+                    memberList.Items.Add(item);
+                }
+
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show($"Invalid regex pattern: {ex.Message}", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void bookSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = bookSearch.Text;
+
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                ShowBookList();
+                return;
+            }
+
+            try
+            {
+                string pattern = Regex.Escape(searchText);
+                Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
+
+
+                var valid =
+                    from item in Book.ViewList()
+                    where regex.IsMatch(Convert.ToString(item.Code)) || regex.IsMatch(item.Title) || regex.IsMatch(item.Author)
+                    select item;
+
+                bookList.Items.Clear();
+                foreach (var item in valid)
+                {
+                    bookList.Items.Add(item);
+                }
+
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show($"Invalid regex pattern: {ex.Message}", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void bookSearch_Leave(object sender, EventArgs e)
+        {
+            bookSearch.Text = "Search ...";
+            ShowBookList();
+        }
+
+        private void memberSearch_Leave(object sender, EventArgs e)
+        {
+            memberSearch.Text = "Search ...";
+            ShowMemberList();
         }
     }
 }
