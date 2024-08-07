@@ -3,7 +3,7 @@ name: Build and Release Windows Forms App
 on:
   push:
     tags:
-      - 'v1.0.1'
+      - 'v1.0.0'
 
 jobs:
   build:
