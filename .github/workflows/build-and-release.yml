@@ -46,14 +46,3 @@ jobs:
       with:
         name: library-management-system
         path: ./release
-
-    - name: Create GitHub Release
-      uses: ncipollo/release-action@v1
-      with:
-        tag: ${{ github.ref }}
-        name: Release ${{ github.ref }}
-        body: |
-          Automated release of version ${{ github.ref }}.
-        files: ./release/**
-        draft: false
-        prerelease: false
