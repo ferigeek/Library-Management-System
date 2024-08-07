@@ -1,0 +1,59 @@
+name: Build and Release Windows Forms App
+
+on:
+  push:
+    tags:
+      - 'v1.0.0'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore LMS.sln
+
+    - name: Build
+      run: dotnet build LMS.sln --configuration Release --no-restore
+
+    - name: Publish
+      run: dotnet publish LMS/LMS.csproj -c Release -r win-x64 --self-contained false -o publish /p:PublishSingleFile=true
+
+    - name: Create release artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: library-management-system
+        path: publish/**
+
+  release:
+    needs: build
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download build artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: library-management-system
+        path: ./release
+
+    - name: Create GitHub Release
+      uses: ncipollo/release-action@v1
+      with:
+        tag: ${{ github.ref }}
+        name: Release ${{ github.ref }}
+        body: |
+          Automated release of version ${{ github.ref }}.
+        files: ./release/**
+        draft: false
+        prerelease: false
