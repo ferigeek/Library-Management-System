@@ -1,0 +1,50 @@
+name: Build and Release LMS
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version'
+        required: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore LMS.sln
+    
+    - name: Build
+      run: dotnet build LMS.sln --configuration Release --no-restore
+    
+    - name: Publish
+      run: dotnet publish LMS.csproj -c Release -r win-x64 -p:PublishSingleFile=true --self-contained true -o publish
+    
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ github.event.inputs.version }}
+        release_name: LMS Release ${{ github.event.inputs.version }}
+        draft: false
+        prerelease: false
+    
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./publish/LMS.exe
+        asset_name: LMS-${{ github.event.inputs.version }}.exe
+        asset_content_type: application/octet-stream
