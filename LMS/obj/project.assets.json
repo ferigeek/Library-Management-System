@@ -4762,11 +4762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\LMS.csproj",
+      "projectUniqueName": "S:\\Repos\\Library-Management-System\\LMS\\LMS.csproj",
       "projectName": "LMS",
-      "projectPath": "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\LMS.csproj",
+      "projectPath": "S:\\Repos\\Library-Management-System\\LMS\\LMS.csproj",
       "packagesPath": "C:\\Users\\farna\\.nuget\\packages\\",
-      "outputPath": "P:\\SandBox\\GitLMS\\Library-Management-System\\LMS\\obj\\",
+      "outputPath": "S:\\Repos\\Library-Management-System\\LMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "P:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4782,7 +4782,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.voids.site/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
